@@ -1,7 +1,6 @@
-﻿var app = angular.module("ApplicationModule", ["ngRoute"]);
+var app = angular.module("ApplicationModule", ["ngRoute"]);
 
-
-//Showing Routing  
+//Showing Routing
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     debugger;
     $routeProvider.when('/page1',
