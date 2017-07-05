@@ -1,4 +1,4 @@
-debugger;
+
 app.controller("Page1Controller", function ($scope, $location, HomeService) {
     getContent();
 
