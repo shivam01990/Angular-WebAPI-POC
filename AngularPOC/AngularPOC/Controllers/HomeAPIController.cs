@@ -8,22 +8,10 @@ using System.Web.Http;
 namespace AngularPOC.Controllers
 {
     public class HomeAPIController : ApiController
-    { 
-        
-        public string GetDataPage1()
+    {  
+        public IHttpActionResult Get(string content)
         {
-            return "Page1 Content";
+            return new JsonResult<string>(content, new JsonSerializerSettings(), Encoding.UTF8, this);
         }
-
-        public string GetDataPage2()
-        {
-            return "Page2 Content";
-        }
-
-        public string GetDataPage3()
-        {
-            return "Page3 Content";
-        }
-
     }
 }
