@@ -1,4 +1,4 @@
-﻿
+
 @{
     ViewBag.Title = "Index";
 }
@@ -6,12 +6,13 @@
 <a href="page1" class="navbar-brand">Page 1</a>
 <a href="page2" class="navbar-brand">Page 2</a>
 <a href="page3" class="navbar-brand">Page 3</a>
-<div data-ng-app="ApplicationModule">
+<br />
+<div class="col-sm-12">
     <div data-ng-view></div>
 </div>
 @section scripts {
 
-    <script type="text/javascript" src="@Url.Content("~/Scripts/angular.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/angular.min.js")"></script>
     <script type="text/javascript" src="@Url.Content("~/Scripts/angular-route.min.js")"></script>
     <script type="text/javascript" src="@Url.Content("~/App/module.js")"></script>
     <script src="@Url.Content("~/App/Services/homeService.js")" type="text/javascript"></script>
